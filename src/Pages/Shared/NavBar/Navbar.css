@@ -1,0 +1,4 @@
+.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with some transparency */
+    backdrop-filter: blur(10px); /* Add a blur effect to the background */
+}
