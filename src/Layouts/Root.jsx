@@ -4,9 +4,9 @@ import Navbar from '../Pages/Shared/NavBar/Navbar';
 
 const Root = () => {
     return (
-        <div className='bg-black text-white'>
-            <div className='max-w-6xl mx-auto'><Navbar></Navbar></div>
-            <Outlet></Outlet>
+        <div className='bg-black '>
+            <div className='max-w-6xl mx-auto text-red-700 font-extrabold'><Navbar></Navbar></div>
+            <div><Outlet></Outlet></div>
             <Footer></Footer>
         </div>
     );
