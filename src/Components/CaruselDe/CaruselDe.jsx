@@ -59,6 +59,7 @@ const CaruselDe = () => {
                     </div>
                 </div>
             </div>
+            
 
         </div>
     );
