@@ -1,16 +1,48 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import SocialLogin from '../../SocialLoginButton/SocialLogin';
+import { AuthContext } from '../../Provider/AuthProvider';
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
+
+
+    const {login} = useContext(AuthContext)
+
+    const handlelogin = e =>{
+        e.preventDefault();
+        const form = new FormData(e.currentTarget)
+        const email = form.get('email')
+        const password = form.get('password')
+
+
+        if(password.length < 6){
+            toast.error("is less than 6 characters")
+           
+        }
+        else{
+            return toast.success('Log in successfully')
+
+        }
+
+        login(email,password)
+        .then(result => {
+            console.log(result.user)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }
+
+
     return (
         <div className='text-red-500'>
             <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://www.madebydesignesia.com/themes/rockfest/images/background/t4.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div>
                     <h1 className='text-4xl text-red-600 font-extrabold my-10 text-center'>Login your account</h1>
-                    <form className="w-96">
+                    <form onSubmit={handlelogin} className="w-96">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-white">Email</span>

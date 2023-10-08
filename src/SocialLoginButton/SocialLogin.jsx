@@ -4,7 +4,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 const SocialLogin = () => {
 
-    const {loginWithLogin} = useContext(AuthContext);
+    const {loginWithGoogle} = useContext(AuthContext);
     const handlegoogleLogin = (socialMedia) =>{
         socialMedia()
         .then(result=>console.log(result))
@@ -13,7 +13,7 @@ const SocialLogin = () => {
 
     return (
         <div>
-            <button onClick={()=>handlegoogleLogin(loginWithLogin)} className='btn'><FcGoogle></FcGoogle> Sing In with Google</button>
+            <button onClick={()=>handlegoogleLogin(loginWithGoogle)} className='btn'><FcGoogle></FcGoogle> Sing In with Google</button>
         </div>
     );
 };
