@@ -10,7 +10,7 @@ const TicktePriceOtp = () => {
             </div>
             <div className='grid grid-cols-3'>
             <div className="flex justify-center mt-8">
-                <div className="max-w-xs bg-black border rounded-lg overflow-hidden shadow-lg">
+                <div className="max-w-xs bg-black border border-red-500 overflow-hidden shadow-lg">
                     <div className="px-6 py-4">
                         <div className="font-bold text-3xl mb-2 text-red-500">One-Days</div>
                         <p className="text-gray-200 text-xl">$ 49.89</p>
@@ -80,7 +80,7 @@ const TicktePriceOtp = () => {
                 </div>
             </div>
             <div className="flex justify-center mt-8">
-                <div className="max-w-xs bg-black border rounded-lg overflow-hidden shadow-lg">
+                <div className="max-w-xs bg-black border border-red-500 overflow-hidden shadow-lg">
                     <div className="px-6 py-4">
                         <div className="font-bold text-3xl mb-2 text-red-500">All-Days</div>
                         <p className="text-gray-200 text-xl">$ 89.89</p>
