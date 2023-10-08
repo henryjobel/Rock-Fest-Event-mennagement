@@ -1,63 +1,62 @@
 [
-    {
-      "id": 1,
-      "category": "Gerna",
-      "title": "Artcell",
-      "img": "artcell.jpg",
-      "dtlsImg": "artcell-details.jpg",
-      "shortDescription": "Progressive rock band from Bangladesh",
-      "longDescription": "Artcell is a progressive rock band formed in 1999 in Dhaka, Bangladesh. They are known for their intricate compositions and blend of various musical genres.",
-      "hirePrice": 1000
-    },
-    {
-      "id": 2,
-      "category": "Gerna",
-      "title": "Aurtohin",
-      "img": "aurtohin.jpg",
-      "dtlsImg": "aurtohin-details.jpg",
-      "shortDescription": "Rock band with a unique sound",
-      "longDescription": "Aurtohin is a renowned rock band in Bangladesh. They are known for their unique sound that combines rock with elements of folk and classical music.",
-      "hirePrice": 800
-    },
-    {
-      "id": 3,
-      "category": "Gerna",
-      "title": "Warfez",
-      "img": "warfez.jpg",
-      "dtlsImg": "warfez-details.jpg",
-      "shortDescription": "Experimental music at its best",
-      "longDescription": "Warfez is an experimental music group that pushes boundaries and explores new sounds. Their music is a fusion of various genres and is known for its innovative approach.",
-      "hirePrice": 1200
-    },
-    {
-      "id": 4,
-      "category": "Gerna",
-      "title": "Shironamhin",
-      "img": "shironamhin.jpg",
-      "dtlsImg": "shironamhin-details.jpg",
-      "shortDescription": "Lyrically rich songs with a touch of melancholy",
-      "longDescription": "Shironamhin is a band known for their emotionally charged and lyrically rich songs. Their music often explores themes of melancholy and introspection.",
-      "hirePrice": 900
-    },
-    {
-      "id": 5,
-      "category": "Gerna",
-      "title": "Arbovirus",
-      "img": "arbovirus.jpg",
-      "dtlsImg": "arbovirus-details.jpg",
-      "shortDescription": "Hard-hitting rock with socially relevant lyrics",
-      "longDescription": "Arbovirus is a rock band with a reputation for hard-hitting music and socially relevant lyrics. They are known for their energetic performances and powerful stage presence.",
-      "hirePrice": 1500
-    },
-    {
-      "id": 6,
-      "category": "Gerna",
-      "title": "Black",
-      "img": "black.jpg",
-      "dtlsImg": "black-details.jpg",
-      "shortDescription": "Dark and intense music with poetic lyrics",
-      "longDescription": "Black is a band that creates dark and intense music with poetic lyrics. Their songs often delve into themes of love, loss, and existential introspection.",
-      "hirePrice": 1100
-    }
-  ]
-  
+  {
+    "id": 1,
+    "category": "Gerna",
+    "title": "Artcell",
+    "imge": "https://i.ibb.co/pyprgNn/Artcell.jpg",
+    "dtlsImg": "https://i.ibb.co/wy9h3yc/artcellcv.jpg",
+    "shortDescription": "Progressive rock band from Bangladesh",
+    "longDescription": "Artcell is a progressive rock band formed in 1999 in Dhaka, Bangladesh. They are known for their intricate compositions and blend of various musical genres.",
+    "hirePrice": 1000
+  },
+  {
+    "id": 2,
+    "category": "Gerna",
+    "title": "Aurtohin",
+    "imge": "https://i.ibb.co/rvpBcWd/aurthohin.jpg",
+    "dtlsImg": "https://i.ibb.co/jfKrrPc/aurthohincv.jpg",
+    "shortDescription": "Rock band with a unique sound",
+    "longDescription": "Aurtohin is a renowned rock band in Bangladesh. They are known for their unique sound that combines rock with elements of folk and classical music.",
+    "hirePrice": 800
+  },
+  {
+    "id": 3,
+    "category": "Gerna",
+    "title": "Warfez",
+    "imge": "https://i.ibb.co/qrSkz5D/warfez.jpg",
+    "dtlsImg": "https://i.ibb.co/chDTrSm/warfezcv.jpg",
+    "shortDescription": "Experimental music at its best",
+    "longDescription": "Warfez is an experimental music group that pushes boundaries and explores new sounds. Their music is a fusion of various genres and is known for its innovative approach.",
+    "hirePrice": 1200
+  },
+  {
+    "id": 4,
+    "category": "Gerna",
+    "title": "Shironamhin",
+    "imge": "https://i.ibb.co/2sFM16N/sironamhin.jpg",
+    "dtlsImg": "https://i.ibb.co/12W8McJ/sironamhincv.jpg",
+    "shortDescription": "Lyrically rich songs with a touch of melancholy",
+    "longDescription": "Shironamhin is a band known for their emotionally charged and lyrically rich songs. Their music often explores themes of melancholy and introspection.",
+    "hirePrice": 900
+  },
+  {
+    "id": 5,
+    "category": "Gerna",
+    "title": "Arbovirus",
+    "imge": "https://i.ibb.co/XS0npjj/Arbovirus.png",
+    "dtlsImg": "https://i.ibb.co/C8ng9ZL/virouscv.jpg",
+    "shortDescription": "Hard-hitting rock with socially relevant lyrics",
+    "longDescription": "Arbovirus is a rock band with a reputation for hard-hitting music and socially relevant lyrics. They are known for their energetic performances and powerful stage presence.",
+    "hirePrice": 1500
+  },
+  {
+    "id": 6,
+    "category": "Gerna",
+    "title": "Black",
+    "imge": "https://i.ibb.co/kXnYV9J/black.jpg",
+    "dtlsImg": "https://i.ibb.co/H7dKjP8/blackcv.jpg",
+    "shortDescription": "Dark and intense music with poetic lyrics",
+    "longDescription": "Black is a band that creates dark and intense music with poetic lyrics. Their songs often delve into themes of love, loss, and existential introspection.",
+    "hirePrice": 1100
+  }
+]

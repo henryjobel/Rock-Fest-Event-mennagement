@@ -6,14 +6,17 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
+import BandDtls from "../Pages/BandDtls/BandDtls";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
-      children:[{
+      children:[
+        {
         path:"/",
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=> fetch('/banddata.json')
       },
       {
         path:"/ticktes",
@@ -34,6 +37,11 @@ const router = createBrowserRouter([
       {
         path:"/contact",
         element:<Contact></Contact>
+      },
+      {
+        path:"/bandDtls/:id",
+        element:<BandDtls></BandDtls>,
+        loader:()=> fetch('/banddata.json')
       }
     ]
     },
