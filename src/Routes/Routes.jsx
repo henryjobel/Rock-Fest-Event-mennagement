@@ -8,6 +8,7 @@ import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import BandDtls from "../Pages/BandDtls/BandDtls";
 import PrivateRoutes from "./PrivateRoutes";
+import PrivateRoutesTow from "./PrivateRoutesTow";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/ticktes",
-        element:<Tickets></Tickets>
+        element:<PrivateRoutesTow><Tickets></Tickets></PrivateRoutesTow>
       },
       {
         path:"/login",
