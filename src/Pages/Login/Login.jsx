@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../SocialLoginButton/SocialLogin';
 import { AuthContext } from '../../Provider/AuthProvider';
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
@@ -20,9 +21,18 @@ const Login = () => {
         .then(res => {
             console.log(res.user)
             naviGates(location?.state ? location.state: '/');
-
-            
         })
+        .catch(error =>{
+            console.log(error)
+        })
+        if(password.length < 6){
+            toast.error('Password Worng')
+            return; 
+        }
+        else{
+            toast.success('Successfully Login')
+            return
+        }
 
     }
 

@@ -34,6 +34,10 @@ const Register = () => {
             toast.error("You don't have a special character")
             return;
         }
+        else{
+            toast.success('Successfully Register')
+            return;
+        }
     }
     
     return (
