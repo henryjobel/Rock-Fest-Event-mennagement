@@ -1,13 +1,15 @@
+import React from 'react';
 import atristpic1 from '../../assets/featured-1.jpg';
 import atristpic2 from '../../assets/featured-2.jpg';
 import atristpic3 from '../../assets/featured-3.jpg';
 import artistpic4 from '../../assets/rockstar2.jpg'
 import artistlog from '../../assets/artist.png';
-const DateEvent = () => {
+import CaruselDe from '../../Components/CaruselDe/CaruselDe';
+const Letwats = () => {
     return (
-        <div className='text-white text-center'>
-            <h1 className='text-7xl font-extrabold pt-32'>Nov 23-28</h1>
-            <p className='text-red-700 text-4xl font-semibold pt-7'>Bir Uttam Ziaur Rahman Road, Dhaka</p>
+        <div className='text-white text-center max-w-6xl mx-auto'>
+            <h1 className='text-7xl font-extrabold pt-32'>LETS ROCK</h1>
+            <p className='text-red-700 text-4xl font-semibold pt-7'>Are ready for the rock</p>
             <div className='flex justify-center pt-20'>
                 <img className='w-96' src={artistlog} alt="" />
             </div>
@@ -18,7 +20,7 @@ const DateEvent = () => {
                         <p className='text-5xl text-red-500 font-bold'>Artcell</p>
                     </div>
                 </div>
-                <div className="card w-96 flex items-center shadow-xl image-full transform hover:scale-105 transition-transform">
+                <div className="card lg:w-96 flex items-center shadow-xl image-full transform hover:scale-105 transition-transform">
                     <figure><img src={atristpic2} alt="Shoes" /></figure>
                     <div className="card-body pt-52">
                         <p className='text-5xl text-red-500 font-bold'>Warfez</p>
@@ -40,9 +42,9 @@ const DateEvent = () => {
                 </div>
             </div>
             <p className='text-2xl font-semibold'>Halestorm Chevelle Joan Jett In This Moment The Hives Gojira The Distillers Action Bronson The Struts Refused Killswitch Engage Parkway Drive Beartooth Scars on Broadway Architects Tom Morrelo Avatar Bad Wolves</p>
+            <CaruselDe></CaruselDe>
         </div>
-
     );
 };
 
-export default DateEvent;
+export default Letwats;

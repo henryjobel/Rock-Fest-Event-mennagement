@@ -9,6 +9,7 @@ import Contact from "../Pages/Contact/Contact";
 import BandDtls from "../Pages/BandDtls/BandDtls";
 import PrivateRoutes from "./PrivateRoutes";
 import PrivateRoutesTow from "./PrivateRoutesTow";
+import Letwats from "../Pages/LetWats/Letwats";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path:"/contact",
         element:<Contact></Contact>
+      },
+      {
+        path:"/galary",
+        element:<PrivateRoutes><Letwats></Letwats></PrivateRoutes>
       },
       {
         path:"/bandDtls/:id",
