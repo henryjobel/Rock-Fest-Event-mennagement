@@ -1,38 +1,29 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../SocialLoginButton/SocialLogin';
 import { AuthContext } from '../../Provider/AuthProvider';
-import toast from 'react-hot-toast';
 
 
 const Login = () => {
-
-
-    const {login} = useContext(AuthContext)
-
+    const {singIn} = useContext(AuthContext)
+    const location = useLocation();
+    const naviGates = useNavigate();
     const handlelogin = e =>{
         e.preventDefault();
         const form = new FormData(e.currentTarget)
         const email = form.get('email')
         const password = form.get('password')
+        console.log(email,password)
 
+        singIn(email,password)
+        .then(res => {
+            console.log(res.user)
+            naviGates(location?.state ? location.state: '/');
 
-        if(password.length < 6){
-            toast.error("is less than 6 characters")
-           
-        }
-        else{
-            return toast.success('Log in successfully')
-
-        }
-
-        login(email,password)
-        .then(result => {
-            console.log(result.user)
+            
         })
-        .catch(error => {
-            console.log(error)
-        })
+
     }
 
 

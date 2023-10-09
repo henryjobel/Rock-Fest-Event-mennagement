@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 // eslint-disable-next-line react/prop-types, no-unused-vars
-import React, { createContext, useState } from 'react';
-import { GoogleAuthProvider,createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
+import React, { createContext, useEffect, useState } from 'react';
+import { GoogleAuthProvider,createUserWithEmailAndPassword,onAuthStateChanged,signInWithEmailAndPassword,signInWithPopup, signOut } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import app from '../Config/firebaseconfig';
 
@@ -15,23 +15,43 @@ const googleProvider = new GoogleAuthProvider();
 const AuthProvider = ({children}) => {
 
     const loginWithGoogle = () =>{
+        setLoder(true)
         return signInWithPopup(auth, googleProvider)
     }
     const [user,setUser] = useState(null)
+    const [loader,setLoder] = useState(true)
     const createUser = (email , password) =>{
-
+        setLoder(true)
         return createUserWithEmailAndPassword(auth , email , password)
     }
-
-    const login = (email,password) =>{
-        return signInWithEmailAndPassword(auth,email,password)
+    const singIn = (email, password) => {
+        setLoder(true)
+        return signInWithEmailAndPassword(auth, email, password);
     }
+    const singOut = () => {
+        setLoder(true)
+        return signOut(auth);
+    }
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
+            setUser(currentUser);
+            setLoder(false);
+            
+        });
+        return () => {
+            unSubscribe();
+        }
+    }, [])
+
 
     const authinfo = {
         user,
         loginWithGoogle,
         createUser,
-        login
+        singIn,
+        singOut,
+        loader
+       
     }
     return (
         <AuthContext.Provider value={authinfo}>

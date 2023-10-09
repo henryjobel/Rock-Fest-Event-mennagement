@@ -7,6 +7,7 @@ import Register from "../Pages/Register/Register";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import BandDtls from "../Pages/BandDtls/BandDtls";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/bandDtls/:id",
-        element:<BandDtls></BandDtls>,
+        element:<PrivateRoutes><BandDtls></BandDtls></PrivateRoutes>,
         loader:()=> fetch('/banddata.json')
       }
     ]
