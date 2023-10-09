@@ -3,6 +3,7 @@ import logo from '../../../assets/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import userImage from "../../../assets/3003035.png"
+import Tickets from './../../Tickets/Tickets';
 
 const Navbar = () => {
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/contact'>Contact us</NavLink></li>
-        <li><NavLink to='/register'>Register</NavLink></li>
+        <li><NavLink to='/ticktes'> Tickets</NavLink></li>
     </>
     return (
         <div>
@@ -70,7 +71,7 @@ const Navbar = () => {
                         </div>
                             :
                             <Link to='/login'>
-                                <button className="btn btn-active btn-primary">Login</button>
+                                <button className="btn bg-red-600 text-white">Login</button>
                             </Link>
                     }
                 </div>

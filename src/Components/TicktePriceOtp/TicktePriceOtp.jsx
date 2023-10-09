@@ -8,7 +8,7 @@ const TicktePriceOtp = () => {
                 <h1 className='text-5xl font-bold mt-36 mb-10 text-center text-white'>Buy <span className='text-red-700'>Ticket</span></h1>
                 <p className='font-bold text-red-700 text-center'>___________________________________</p>
             </div>
-            <div className='grid grid-cols-3'>
+            <div className='grid lg:grid-cols-3'>
             <div className="flex justify-center mt-8">
                 <div className="max-w-xs bg-black border border-red-500 overflow-hidden shadow-lg">
                     <div className="px-6 py-4">

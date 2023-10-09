@@ -8,7 +8,9 @@ const Root = () => {
         <div className='bg-black '>
             <div className='max-w-6xl mx-auto text-red-700 font-extrabold'><Navbar></Navbar></div>
             <div><Outlet></Outlet></div>
-            <Footer></Footer>
+            <div className='pt-5'>
+                <Footer></Footer>
+            </div>
             <Toaster/>
         </div>
     );

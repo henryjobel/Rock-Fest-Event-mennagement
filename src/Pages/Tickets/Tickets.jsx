@@ -1,9 +1,12 @@
 import React from 'react';
+import TicktePriceOtp from '../../Components/TicktePriceOtp/TicktePriceOtp';
 
 const Tickets = () => {
     return (
-        <div>
-            <h1>This is tickets details</h1>
+        <div className='max-w-6xl mx-auto' style={{ backgroundImage: 'url(https://www.madebydesignesia.com/themes/rockfest/images/background/t4.jpg' }}>
+            <div>
+                <TicktePriceOtp></TicktePriceOtp>
+            </div>
         </div>
     );
 };

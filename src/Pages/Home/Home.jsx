@@ -30,7 +30,7 @@ const Home = () => {
                 <p className='text-red-600 text-center text-3xl font-semibold'>You Can Hire rock band that will make your event unforgettable</p>
                 <p className='font-bold text-red-700 text-center'>___________________________________</p>
             </div>
-            <div className='grid grid-cols-3 gap-7 mt-6' style={{ backgroundImage: 'url("https://www.madebydesignesia.com/themes/rockfest/images/background/t5.jpg")' }}>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-7 mt-6' style={{ backgroundImage: 'url("https://www.madebydesignesia.com/themes/rockfest/images/background/t5.jpg")' }}>
                 {
                     bandAll.map(bands => <BandsCards key={bands.id} bands={bands}></BandsCards>)
                 }
