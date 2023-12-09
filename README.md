@@ -37,4 +37,4 @@ Feature: Comprehensive tools for managing stages, equipment, and technical requi
 - Feature: Implementing smooth and visually appealing animations, particularly on scroll, to enhance the overall user experience.
 - Technology: AOS library for easy integration of scroll animations, and JavaScript for additional custom animations and interactivity.
 
-- [Live Link](https://github.com/vitejs/vite-plugin-react-swc)
+- [Live Link](https://rock-fast-event-management.web.app/)
